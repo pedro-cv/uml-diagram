@@ -84,7 +84,7 @@
                                             <div class="col-md-8">
                                                 <div class="form-label text-primary">Cargar Diagrama</div>
                                                 <input type="file" name="url" class="form-control"
-                                                    accept=".c4" />
+                                                    accept=".uml" />
                                             </div>
                                         </div>
 

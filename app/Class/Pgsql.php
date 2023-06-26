@@ -102,7 +102,7 @@ class Pgsql {
             }
         }
 
-        if (!($nameContent == "" || $primaryContent == "" || $primaryForeign == "" || $primaryForeign == "")) {
+        if ($nameContent == "" || $primaryContent == "" || $primaryForeign == "" || $primaryForeign == "") {
             $this->message .= "-- Una relacion no se pudo realizar por falta de informacion\n";
         }
 
@@ -139,7 +139,7 @@ class Pgsql {
             }
         }
 
-        if (!($nameSource == "" || $nameTarget == "" || $primarySource == "" || $primaryTarget == "")) {
+        if ($nameSource == "" || $nameTarget == "" || $primarySource == "" || $primaryTarget == "") {
             $this->message .= "-- Una relacion no se pudo realizar por falta de informacion\n";
         }
 
@@ -170,7 +170,7 @@ class Pgsql {
                 $primaryTarget = $this->getPrimary($this->content[$i]);
             }
         }
-        if (!($nameSource == "" || $nameTarget == "" || $primarySource == "" || $primaryTarget == "")) {
+        if ($nameSource == "" || $nameTarget == "" || $primarySource == "" || $primaryTarget == "") {
             $this->message .= "-- Una relacion no se pudo realizar por falta de informacion\n";
         }
 

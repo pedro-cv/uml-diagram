@@ -138,7 +138,7 @@ class SqlServer{
             }
         }
 
-        if (!($nameSource == "" || $nameTarget == "" || $primarySource == "" || $primaryTarget == "")) {
+        if ($nameSource == "" || $nameTarget == "" || $primarySource == "" || $primaryTarget == "") {
             $this->message .= "-- Una relacion no se pudo realizar por falta de informacion\n";
         }
 
@@ -169,7 +169,7 @@ class SqlServer{
                 $primaryTarget = $this->getPrimary($this->content[$i]);
             }
         }
-        if (!($nameSource == "" || $nameTarget == "" || $primarySource == "" || $primaryTarget == "")) {
+        if ($nameSource == "" || $nameTarget == "" || $primarySource == "" || $primaryTarget == "") {
             $this->message .= "-- Una relacion no se pudo realizar por falta de informacion\n";
         }
 
