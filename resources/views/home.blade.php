@@ -12,7 +12,7 @@
                                 Inicio
                             </div>
                             <h2 class="page-title">
-                                C4 Software
+                                UML Software
                             </h2>
                         </div>
                         <!-- Page title actions -->
@@ -62,7 +62,7 @@
                             <div class="col-md-12">
                                 <div class="card">
                                     <div class="card-header">
-                                        <h3 class="card-title">Modelo C4</h3>
+                                        <h3 class="card-title">Referencias UML</h3>
                                     </div>
                                     <div class="card-body">
                                         <div id="carousel-captions" class="carousel slide" data-bs-ride="carousel">

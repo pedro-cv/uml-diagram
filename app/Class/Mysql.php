@@ -103,8 +103,8 @@ class Mysql
             }
         }
 
-        if (!($nameContent == "" || $nameContent == "" || $primaryForeign == "" || $primaryForeign == "")) {
-            $this->message = "-- Una relacion no se pudo realizar por falta de informacion";
+        if (!($nameContent == "" || $primaryContent == "" || $primaryForeign == "" || $primaryForeign == "")) {
+            $this->message .= "-- Una relacion no se pudo realizar por falta de informacion\n";
         }
 
         $foreginId = $nameForeign . "_id";
@@ -141,7 +141,7 @@ class Mysql
         }
 
         if (!($nameSource == "" || $nameTarget == "" || $primarySource == "" || $primaryTarget == "")) {
-            $this->message = "-- Una relacion no se pudo realizar por falta de informacion";
+            $this->message = "-- Una relacion no se pudo realizar por falta de informacion\n";
         }
 
         $relation = 'ALTER TABLE ' . $nameTarget . '
@@ -172,7 +172,7 @@ class Mysql
             }
         }
         if (!($nameSource == "" || $nameTarget == "" || $primarySource == "" || $primaryTarget == "")) {
-            $this->message = "-- Una relacion no se pudo realizar por falta de informacion";
+            $this->message .= "-- Una relacion no se pudo realizar por falta de informacion\n";
         }
 
         $primarySourceId = $primarySource . $nameSource;

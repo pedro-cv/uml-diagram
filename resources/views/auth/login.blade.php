@@ -1,7 +1,7 @@
 <x-guest-layout>
     @section('title', isset($title) ? $title : 'Login')
 
-    <div class="page page-center bg-dark">
+    <div class="page page-center bg-gray-500">
         <div class="container-tight py-4">
             <div class="text-center mb-4">
                 <a href="." class="navbar-brand navbar-brand-autodark"><img src="{{asset('assets/img/logo.png')}}"

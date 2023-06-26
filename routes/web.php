@@ -8,6 +8,7 @@ use App\Http\Controllers\ScriptsController;
 use App\Mail\notificacion;
 use App\Models\User;
 use App\Notifications\c4notificacion;
+use Facade\Ignition\Http\Controllers\ScriptController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Notification;
 use Illuminate\Support\Facades\Route;
@@ -93,6 +94,7 @@ Route::middleware('auth')->group(function () {
     Route::get('scriptsMysql/{id}', [ScriptsController::class, 'scriptMysql'])->name('script.mysql');
     Route::get('scriptsSqlServer/{id}', [ScriptsController::class, 'scriptSqlServer'])->name('script.sqlserver');
     Route::get('scriptsPgsql/{id}', [ScriptsController::class, 'scriptPgsql'])->name('script.pgsql');
+    Route::get('generateViews/{id}', [ScriptsController::class, 'viewHTML'])->name('viewhtml');
 
     /* Notificaciones */
     Route::post('notificar', [NotificacionController::class, 'notificar'])->name('notificar');

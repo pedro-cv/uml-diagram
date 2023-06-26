@@ -19,7 +19,7 @@ create()
 );
 
 ALTER TABLE tabla1
-        ADD FOREIGN KEY (id)
+        ADD CONSTRAINT fk_id FOREIGN KEY (id)
         REFERENCES tabla3 (id_Tabla1);
 
 CREATE TABLE tabla1tabla2 (
@@ -28,15 +28,18 @@ CREATE TABLE tabla1tabla2 (
             PRIMARY KEY (id, id)
         );
         ALTER TABLE tabla1tabla2
-        ADD FOREIGN KEY (id) REFERENCES tabla1(id);
+        ADD CONSTRAINT fk_id FOREIGN KEY (id) REFERENCES tabla1(id);
         ALTER TABLE tabla1tabla2
-        ADD FOREIGN KEY (id) REFERENCES tabla2(id);
+        ADD CONSTRAINT fk_id FOREIGN KEY (id) REFERENCES tabla2(id);
 
 ALTER TABLE tabla4
         ADD COLUMN tabla3 INT;
 
         ALTER TABLE tabla4
-        ADD FOREIGN KEY (tabla3_id)
+        ADD CONSTRAINT fk_tabla3_id FOREIGN KEY (tabla3_id)
         REFERENCES tabla3 (id_Tabla1);
 
+-- Errores encontrados: .
+-- Una relacion no se pudo realizar por falta de informacion
+-- Una relacion no se pudo realizar por falta de informacion
 -- Una relacion no se pudo realizar por falta de informacion

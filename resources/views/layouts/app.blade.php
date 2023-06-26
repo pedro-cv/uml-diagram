@@ -31,7 +31,7 @@
     <link rel="stylesheet" href="{{ asset('css/style.modern.css') }}">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/iconfont/tabler-icons.min.css">
-    <link rel="icon" href="{{ asset('assets/img/favicon.png') }}">
+    <link rel="icon" href="{{ asset('assets/img/logo.png') }}">
     <!-- CSS files -->
     {{-- <link href="{{ asset('back/dist/libs/dropzone/dist/dropzone.css') }}" rel="stylesheet" /> --}}
     <link href="{{ asset('back/dist/css/tabler.css') }}" rel="stylesheet" />

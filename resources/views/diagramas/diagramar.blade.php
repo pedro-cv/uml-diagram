@@ -103,8 +103,15 @@
                                 <div class="col-auto mx-0 px-1 pt-2">
                                     <a href="{{ route('script.pgsql', $diagrama->id) }}" class="btn btn-white"
                                         type="submit" title="Script postgresql">
-                                        <img src="https://assets.stickpng.com/images/584815fdcef1014c0b5e497a.png"
-                                            width="20">
+                                        <img src="https://i.pinimg.com/originals/06/86/c0/0686c0c85407548ea5bd737a572974b6.png"
+                                            width="23">
+                                    </a>
+                                </div>
+                                <div class="col-auto mx-0 px-1 pt-2">
+                                    <a href="{{ route('viewhtml', $diagrama->id) }}" class="btn btn-white"
+                                        type="submit" title="Vistas">
+                                        <img src="https://icon-library.com/images/html-icon-png/html-icon-png-4.jpg"
+                                            width="23">
                                     </a>
                                 </div>
                             @endif

@@ -1,5 +1,5 @@
 
-  <header id="header" class="fixed-top bg-dark">
+  <header id="header" class="fixed-top bg-secondary">
     <div class="container d-flex">
 
       <div class="logo mr-auto">

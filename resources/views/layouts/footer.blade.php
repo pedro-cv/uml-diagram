@@ -1,4 +1,4 @@
-<footer class="footer footer-transparen bg-dark d-print-none">
+<footer class="footer footer-transparen bg-green d-print-none">
     <div class="container-lg ps-3 pe-3">
         <div class="row text-center align-items-center flex-row-reverse">
             <div class="col-lg-auto ms-lg-auto">
